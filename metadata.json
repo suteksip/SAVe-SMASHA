@@ -1,0 +1,7 @@
+{
+  "name": "SAVe SMASHA - Smart Student Attendance",
+  "description": "A modern web application for students to log attendance by scanning dynamic QR codes and upload proof of class participation by submitting photos of their notes.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
