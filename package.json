@@ -12,8 +12,8 @@
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "html5-qrcode": "^2.3.8",
-    "@supabase/supabase-js": "^2.44.4",
-    "dotenv": "^17.2.3"
+    "dotenv": "^17.2.3",
+    "@supabase/supabase-js": "^2.58.0"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",
