@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { useAuth } from '../hooks/useAuth';
 import Header from '../components/Header';
@@ -22,7 +21,7 @@ const DashboardPage: React.FC = () => {
 
             if (user && nisFromQR === user.nis && (type === 'masuk' || type === 'pulang')) {
                 const attendanceType = type as AttendanceType;
-                const response = await logAttendance(user.nis, attendanceType);
+                const response = await logAttendance(user.id, attendanceType);
                 setScanResult({ type: 'success', message: response.message });
             } else {
                 throw new Error("QR code tidak valid atau tidak sesuai dengan data Anda.");

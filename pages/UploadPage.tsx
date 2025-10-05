@@ -1,4 +1,3 @@
-
 import React, { useState, useRef } from 'react';
 import Header from '../components/Header';
 import { useAuth } from '../hooks/useAuth';
@@ -34,7 +33,7 @@ const UploadPage: React.FC = () => {
         setUploadStatus(null);
 
         try {
-            const response = await uploadProof(user.nis, subject, photo);
+            const response = await uploadProof(user.id, subject, photo);
             setUploadStatus({ type: 'success', message: response.message });
             setTimeout(() => {
                 navigateTo('dashboard');
